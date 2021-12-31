@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kevin Hoffman</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <section id="hero">
-            <div class="container">               
+            <div class="container flex">               
                 <div class="title heading" id="title">
-                    <div id="pb1"><h1><b>Kevin Hoffman</b></h1></div>
-                    <div id="pb2"><h1><b>Software Engineer</b></h1></div>
+                    <div class="pb1"><h1><b>Kevin Hoffman</b></h1></div>
+                    <div class="pb2"><h1><b>Software Engineer</b></h1></div>
                 </div>
                 <div class="desc">
                     <p>I build back-end platforms for data processing
@@ -22,10 +22,10 @@
                 </div>
                 <div class="contacts">
                     <ul>
-                        <li><img class="contact-icon" src="img/resume.svg" alt=""><a href="/files/Kevin Hoffman Resume.pdf" download>Resume</a></li>
-                        <li><img class="contact-icon" src="/img/mail.svg" alt=""><a href="mailto:kehoffman@ursinus.edu">kehoffman@ursinus.edu</a></li>
-                        <li><img class="contact-icon" src="img/linkedin.svg" alt=""><a href="https://www.linkedin.com/in/kevin-hoffman-04902819b" target="_blank">LinkedIn</a></li>
-                        <li><img class="contact-icon" src="img/github.svg" alt=""><a href="https://github.com/KevoHoff" target="_blank">GitHub</a></li>
+                        <li class="li-none"><img class="contact-icon" src="img/resume.svg" alt=""><a class="highlighter" href="/files/Kevin Hoffman Resume.pdf" download>Download my Resume</a></li>
+                        <li class="li-none"><img class="contact-icon" src="/img/mail.svg" alt=""><a class="highlighter" href="mailto:kehoffman@ursinus.edu">kehoffman@ursinus.edu</a></li>
+                        <li class="li-none"><img class="contact-icon" src="img/linkedin.svg" alt=""><a class="highlighter" href="https://www.linkedin.com/in/kevin-hoffman-04902819b" target="_blank">LinkedIn</a></li>
+                        <li class="li-none"><img class="contact-icon" src="img/github.svg" alt=""><a class="highlighter" href="https://github.com/KevoHoff" target="_blank">GitHub</a></li>
                     </ul>
                 </div>
                 <svg id="blob1" xmlns="http://www.w3.org/2000/svg" width="525.973" height="512.092" viewBox="0 0 525.973 512.092">
@@ -33,9 +33,149 @@
                   </svg>  
             </div>
         </section>
-        <section id=""></section>
+        <section id="about-me">
+            <div class="container flex">
+                <div class="title heading">
+                    <div class="pb1"><h1><b>About Me</b></h1></div>
+                </div>
+                <div class="desc">
+                    <p>Hi there! My name is Kevin Hoffman and I am an object-oriented programmer. While I have dappled in statistics, and biology; computer science provided me an interface to explore these areas. This realization developed my passion for programming.</p>
+                    <br>
+                    <p>Over the years I have programmed for Impact Health, Ursinus College, Drexel University, and Verif-y, Inc each doing drastically different tasks. From theoretical statistics to sales lead automation, I can adapt to any task! Check out my most used languages.</p>
+                </div>
+                <div class="langs">
+                    <img class="lang" src="/img/c.svg" alt="C++">
+                    <img class="lang" id="r" src="/img/r.svg" alt="R">
+                    <img class="lang" id="java" src="/img/java.svg" alt="Java">
+                    <img class="lang" src="/img/python.svg" alt="Python">
+                    <img class="lang" src="/img/js.svg" alt="JavaScript">
+                    <img class="lang" id="html" src="/img/html.svg" alt="HTML">
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container">
+                <div class="title heading contrast">
+                    <div class="pb2"><h1><b>Experience</b></h1></div>
+                </div>
+                <div class="flex">
+                    <article class="position">
+                        <p class="job-title contrast"><b>Software Engineer</b></p>
+                        <p class="job-location clickable"><a class="alt-highlighter" href="https://drexel.edu/cci/" target="_blank"><u><b>@ Drexel University</b></u></a></p>
+                        <p class="job-duration contrast">September 2020 &mdash; Current</p>
+                        <ul class="job-desc desc alt-contrast">
+                            <li>
+                                <p>Led a team of 4 in implementing, documenting, and testing new antenna driver software to gain 20% more data resolution.</p>
+                            </li>
+                            <li>
+                                <p>Provided proof of concept for novel RFID localization algorithm that improves the pre-existing algorithm's operating speed by 30%.</p>
+                            </li>
+                            <li>
+                                <p>Facilitated experimental analysis of RFID localization in a controlled environment with varying distances and angles of localizable objects to determine accuracy and variance of subjected localization algorithm.</p>
+                            </li>
+                            <li>
+                                <p>Designed and programmed visualizer to analyze the changes that occur to a network of WiFi access points' signal strengths over time.</p>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="position">
+                        <p class="job-title contrast"><b>Machine Learning Intern</b></p>
+                        <p class="job-location clickable"><a class="alt-highlighter" href="https://verif-y.com/services/" target="_blank"><u><b>@ Verif-y</b></u></a></p>
+                        <p class="job-duration contrast">June 2021 &mdash; September 2021</p>
+                        <ul class="job-desc desc alt-contrast">
+                            <li>
+                                <p>Designed and implemented software in Python that used learning algorithms to extract particular features (names, graduation year, GPA, and school name) from college transcripts. Met accuracy goals despite varied transcript formats.</p>
+                            </li>
+                            <li>
+                                <p>Automated academic transcript text extraction process via AWS Textract to reduce time spent on analyzing 1,000 transcripts from 5 hours to 45 minutes.</p>
+                            </li>
+                            <li>
+                                <p>Tested Python NLP libraries (NLTK, SpaCy) to incorporate named-entity recognition to identify student names, dates, and institution names.</p>
+                            </li>
+                            <li>
+                                <p>Streamlined extraction process by designing AWS pipeline to complete data storage in half the time.</p>
+                            </li>
+                            <li>
+                                <p>Tested software for bugs and operating speed. Corrected deficiencies and documented processes for future maintenance.</p>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="position">
+                        <p class="job-title contrast"><b>Summer Intern</b></p>
+                        <p class="job-location clickable"><a class="alt-highlighter" href="https://www.impacthealth.com" target="_blank"><u><b>@ Impact Health</b></u></a></p>
+                        <p class="job-duration contrast">February 2021 &mdash; January 2021</p>
+                        <ul class="job-desc desc alt-contrast">
+                            <li>
+                                <p>Implemented lead sheet partitioner in R based on sales representatives geographic location to gain 25% efficiency.</p>
+                            </li>
+                            <li>
+                                <p>Hired 30 nursing personnel and sales representatives for COVID-19 testing programs.</p>
+                            </li>
+                            <li>
+                                <p>Led onsite COVID-19 testing clinic for 21 government VIPs.</p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <div class="title heading">
+                    <div class="pb2"><h1><b>Projects</b></h1></div>
+                </div>
+                <div class="flex">
+                    <article class="position">
+                        <p class="job-title filler clickable"><a class="highlighter" href="https://www.causeweb.org/usproc/eusrc/2020/virtual-posters/10" target="_blank"><u><b>Generalizing OLS Regression Models</b></u></a></p>
+                        <p class="job-duration">October 2019 &mdash; May 2021</p>
+                        <ul class="job-desc desc">
+                            <li>
+                                <p>Expanded Ordinary Least Squares (OLS) Regression equations to occupy arbitrary Lp spaces.</p>
+                            </li>
+                            <li>
+                                <p>Simulated OLS performance across varying Lp spaces and error term distributions for 2,000 trials.</p>
+                            </li>
+                            <li>
+                                <p>Presented results alongside 16 other students at the Electronic Undergraduate Statistics Research Conference.</p>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="position">
+                        <p class="job-title filler clickable"><a class="highlighter" href="https://github.com/Shane-is-here/CS-275-Team-3" target="_blank"><u><b>Parking Garage Software</b></u></a></p>
+                        <p class="job-duration">September 2021 &mdash; December 2021</p>
+                        <ul class="job-desc desc">
+                            <li>
+                                <p>Programmed Web API using Node.js to process user requests at parking garage.</p>
+                            </li>
+                            <li>
+                                <p>Designed and implemented GUI using HTML5, CSS3, and JavaScript to allow user to access short-term and long-term parking options.</p>
+                            </li>
+                            <li>
+                                <p>Served as Scrum Master for team of 4 developers to keep track of progress made on user stories during biweekly sprints.</p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="title heading">
+                    <div class="pb1"><h1><b>Reach Out</b></h1></div>
+                </div>
+                <div class="job-desc desc">
+                    <p>I am currently looking for a Summer-time Software Engineering position. If you would like to discuss positions or reach out, click the button below!</p>
+                </div>
+                <button><a href="mailto:kehoffman@ursinus.edu">Contact Me</a></button>
+                <div class="contact-nav">
+                    <a class="clickable" href="/files/Kevin Hoffman Resume.pdf" download><img class="contact-icon" src="img/resume.svg" alt=""></a>
+                    <a class="clickable" href="mailto:kehoffman@ursinus.edu"><img class="contact-icon" src="img/mail.svg" alt=""></a>
+                    <a class="clickable" href="https://www.linkedin.com/in/kevin-hoffman-04902819b" target="_blank"><img class="contact-icon" src="img/linkedin.svg" alt=""></a>
+                    <a class="clickable" href="https://github.com/KevoHoff" target="_blank"><img class="contact-icon" src="img/github.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
     </main>
-    
     <script src="./app.js"></script>
 </body>
 </html>
